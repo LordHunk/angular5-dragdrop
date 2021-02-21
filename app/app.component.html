@@ -1,0 +1,10 @@
+
+
+<section>
+  <ul appSortableList (sort)="sort($event)">
+    <li *ngFor="let box of sortableList" class="box" appSortable>
+      {{ box }}
+      <div class="box" *appDraggableHelper>{{ box }}</div>
+    </li>
+  </ul>
+</section>
